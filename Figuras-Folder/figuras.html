@@ -18,27 +18,32 @@
         <section class="main-article">
             <h2>Calcula el area y el perimetro de un cuadrado.</h2>
             <form action="" class="main-form">
-                <label >Escribe cuanto mide cada lado de tu cuadrado:  <input id="Input-Cuadrado" type="number"></label>
+                <label >Escribe cuanto mide cada lado de tu cuadrado:<input id="Input-Cuadrado" type="number"></label>
                
                 <button  type="button" onclick="squarePerimeter()">Calcular el perimetro</button>
                 <button  type="button" onclick="squareÁrea()">Calcular el área</button>
             </form>
         </section>
         <section class="main-article">
-            <h2>Calcular el perimetro y el área del triangulo.</h2>
+            <h2>Calcular el perimetro, área y altura del triangulo.</h2>
             <form action="" class="main-form">
-                <label class="article_label"  for="Input-Triangulo_lado1">Escribe cuanto mide el Primer  lado: </label><input id="Input-Triangulo_lado1" type="number"><br>
-                <label for="Input-Triangulo_lado2">Escribe cuanto mide el Segundo lado: </label><input id="Input-Triangulo_lado2" type="number"><br>
-                <label for="Input-Triangulo_base">Escribe cuanto mide la Base : </label><input id="Input-Triangulo_base" type="number"><br>
-                <label for="Input-Triangulo_altura">Escribe cuanto es la altura : </label><input id="Input-Triangulo_altura" type="number">
+                <label class="article_label"  >Escribe cuanto mide el Primer  lado: <input id="Input-Triangulo_lado1" type="number"></label>
+                <br>
+                <label for="Input-Triangulo_lado2">Escribe cuanto mide el Segundo lado:<input id="Input-Triangulo_lado2" type="number"></label>
+                <br>
+                <label for="Input-Triangulo_base">Escribe cuanto mide la Base :<input id="Input-Triangulo_base" type="number"></label>
+                <br>
+                <label for="Input-Triangulo_altura">Escribe cuanto es la altura :<input id="Input-Triangulo_altura" type="number"></label>
+
                 <button  type="button" onclick="trianglePerimeter()">Calcular el perimetro</button>
                 <button  type="button" onclick="triangleÁrea()">Calcular el área</button>
+                <button  type="button" onclick="triangleHeight()">Calcular la altura</button>
             </form>
         </section >
         <section class="main-article">
             <h2>Calcular el diametro, perimetro y área del circulo.</h2>
             <form action="" class="main-form">
-                <label>Escriba el radio del circulo: <input type="number" id="Input-Circulo_radio">
+                <label>Escriba el radio del circulo:<input type="number" id="Input-Circulo_radio">
                 </label>
                 <button  type="button" onclick="circleDiameter()">Calcular el diametro</button>
                 <button  type="button" onclick="circlePerimeter()">Calcular el perimetro</button>

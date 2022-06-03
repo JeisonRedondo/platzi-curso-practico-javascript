@@ -29,6 +29,17 @@ console.group("Código del Circulo");
 function diametroCirculo (radio){
     return (Number(radio))*2;
 }
+function alturaTriangulo(lado1,lado2,base){
+    
+    switch(true){
+        case lado1===lado2&&lado1!=base :
+            return Math.sqrt((lado1**2)-((base**2)/4));
+        case lado1===base&&base!=lado2 :
+            return Math.sqrt((lado1**2)-((lado2**2)/4));
+        case lado2===base&&base!=lado1 :
+            return Math.sqrt((base**2)-((lado1**2)/4));
+    }
+};
 
 // PI
 const PI = Math.PI;
@@ -78,6 +89,13 @@ const triangleÁrea = () => {
           area = areaTriangulo(base, height);
           alert(`El área del triangulo es: ${area}`);
 };
+const triangleHeight = () => {
+    const side1 = Number(document.getElementById("Input-Triangulo_lado1").value),
+          side2 = Number(document.getElementById("Input-Triangulo_lado2").value),
+          base =  Number(document.getElementById("Input-Triangulo_base").value),
+          triangleHeight = alturaTriangulo(side1, side2, base);
+          alert(`La altura del triangulo es: ${triangleHeight}`);
+};
 
 // Circulo
 
@@ -98,3 +116,4 @@ const circleÁrea = () => {
           area = areaCirculo(radio);
           alert(`El perimetro del Circulo es: ${area}`);
 };
+

@@ -1,0 +1,91 @@
+:root {
+    --text-primary_color : #333 ;
+    --text-secondary_color :black ;
+    --width-sides : 10px;
+    --color_gradient-1 : background: linear-gradient(315deg, rgba(2,0,36,1) 0%, rgba(40,135,148,1) 47%, rgba(0,212,255,1) 100%);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 62.5%;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: 2px solid #333;
+    background: rgb(131,58,180);
+    background: linear-gradient(17deg, rgba(131,58,180,1) 0%, rgba(141,56,175,1) 50%, rgba(69,252,238,1) 100%);
+}
+/* Header Start */
+header h1 {
+    font-size: 3rem;
+    margin: 10px 8%;
+}
+
+header p {
+    margin: 10px 8%;
+    color: rgb(20, 17, 17);
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+/* Header End */
+/* Main Start */
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: rgb(131,58,180);
+    background: linear-gradient(225deg, rgba(131,58,180,1) 0%, rgba(141,56,175,1) 50%, rgba(69,252,238,1) 100%);
+    text-align: center;
+    place-items: center;
+    
+}
+
+main .main-article {
+    display: flex;
+    margin: 20px auto;
+    display: inline; 
+    max-width: 300px;
+    flex-wrap: wrap;
+    border: 3px solid rgb(73, 94, 104);
+    border-radius: 10px;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+}
+main .main-form {
+    width: 80%;
+    margin: 0 auto;
+    display: grid; 
+    grid-template-columns: 1fr;
+    align-items: center;    
+}
+main .main-article h2{
+    margin-bottom: 5px;
+    font-size: 2rem;
+}
+main .main-article label {
+    margin: 5px;
+    font-size: 1.6rem;
+    text-align: left;
+    text-justify: distribute;
+}
+main .main-article label input{
+    border-radius: 5px;
+}
+main .main-form .input_size {
+    width: 80%;
+}
+main .main-form button {
+    margin: 3px;
+}
