@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentages & Discounts</title>
+    <script src="./discounts.js" ></script>
+</head>
+<body>
+    <header>
+        <h1>Percentages & discounts</h1>
+    </header>
+    <section>
+        <h2>This page calculates the discounted price of your products</h2>
+        <form action="">
+            <label for="input-price">Write the price of your product</label>
+            <input type="number" id="input-price"><br>
+            
+            <label for="input-discount">Write the discount of your product</label>
+            <input type="number" id="input-discount"><br>
+            
+            <button type="button" onclick="onClickPriceWithDiscount()">
+                Calculate price with discount
+            </button>
+
+            <p id="resultP"></p>
+    </section>
+
+</body>
+</html>
